@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forno e Afeto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="imagens/logo.jpg">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Puxando a imagem salva na mesma pasta -->
+            <img src="imagens/logo.jpg" alt="Logo Forno & Afeto" class="logo">
+            <div class="header-text">
+                <h1>Forno & Afeto</h1>
+                <p>Bolos e Pães - Feito com carinho, pra você.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Botões das Abas -->
+    <nav class="tabs">
+        <button class="tab-link active" onclick="abrirAba(event, 'doces')">Doces</button>
+        <button class="tab-link" onclick="abrirAba(event, 'paes')">Pães</button>
+        <button class="tab-link" onclick="abrirAba(event, 'bolos')">Bolos</button>
+    </nav>
+
+    <main>
+        <!-- Aba Doces -->
+        <section id="doces" class="tab-content" style="display: block;">
+            <div class="grid">
+                <div class="card">
+                    <img src="imagens/pao_de_mel.jpg" alt="Pão de Mel">
+                    <div class="card-info">
+                        <h3>Pão de Mel</h3>
+                        <p>Delicioso pão de mel recheado com doce de leite e cobertura de chocolate.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/cookie.jpg" alt="Cookies">
+                    <div class="card-info">
+                        <h3>Cookies</h3>
+                        <p>Cookies crocantes por fora e macios por dentro, repletos de gotas de chocolate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aba Pães -->
+        <section id="paes" class="tab-content">
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80" alt="Pão Rústico">
+                    <div class="card-info">
+                        <h3>Pão com Fermentação Natural</h3>
+                        <p>Fermentação natural, casca rústica crocante e miolo super macio.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/pao_recheado.jpg" alt="Pão Recheado">
+                    <div class="card-info">
+                        <h3>Pão Recheado</h3>
+                        <p>Autêntico pão artesanal, leve e com um recheio incrivelmente saboroso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aba Bolos & Sobremesas -->
+        <section id="bolos" class="tab-content">
+            <div class="grid">
+                <div class="card">
+                    <img src="imagens/bolo_cenoura.jpg" alt="Bolo de Cenoura">
+                    <div class="card-info">
+                        <h3>Bolo de Cenoura</h3>
+                        <p>Clássico bolo caseiro de cenoura com cobertura a seu desejo.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/bolo_chocolate.jpg" alt="Bolo de Chocolate">
+                    <div class="card-info">
+                        <h3>Bolo de Chocolate</h3>
+                        <p>Bolo clássico de chocolate com cobertura a seu desejo.</p>
+                    </div>
+                </div>
+                
+                <!-- Novos Bolos Adicionados -->
+                <div class="card">
+                    <img src="imagens/bolo_fuba.jpg" alt="Bolo de Fubá">
+                    <div class="card-info">
+                        <h3>Bolo de Fubá</h3>
+                        <p>Tradicional e fofinho, perfeito para acompanhar aquele café fresquinho da tarde.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/bolo_laranja.jpg" alt="Bolo de Laranja">
+                    <div class="card-info">
+                        <h3>Bolo de Laranja</h3>
+                        <p>Feito com suco natural, trazendo um aroma e sabor cítrico irresistível.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/bolo_iogurte.jpg" alt="Bolo de Iogurte">
+                    <div class="card-info">
+                        <h3>Bolo de Iogurte</h3>
+                        <p>Massa super leve, fofa e úmida, com um toque suave e delicioso de iogurte.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/bolo_limao.jpg" alt="Bolo de Limão">
+                    <div class="card-info">
+                        <h3>Bolo de Limão</h3>
+                        <p>Refrescante e macio, finalizado com uma leve cobertura docinha e raspas de limão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
