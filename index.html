@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forno e Afeto</title>
+    <title>PriAlc - Bolos e Pães Caseiros</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpeg" href="imagens/logo.jpg">
+    <link rel="icon" type="image/jpeg" href="imagens/logo3.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <!-- Puxando a imagem salva na mesma pasta -->
-            <img src="imagens/logo.jpg" alt="Logo Forno & Afeto" class="logo">
+            <img src="imagens/logo3.jpg" alt="Logo PriAlc" class="logo">
             <div class="header-text">
-                <h1>Forno & Afeto</h1>
-                <p>Bolos e Pães - Feito com carinho, pra você.</p>
+                <h1>PriAlc</h1>
+                <p>Bolos e Pães caseiros</p>
             </div>
         </div>
     </header>
@@ -44,6 +44,30 @@
                         <p>Cookies crocantes por fora e macios por dentro, repletos de gotas de chocolate.</p>
                     </div>
                 </div>
+                <div class="card">
+                    <img src="imagens/rosquinha.jpg" alt="Rosquinha">
+                    <div class="card-info">
+                        <h3>Rosquinha</h3>
+                        <p>Rosquinha doce com massa artesanal e super fofa. Escolha a sua versão tradicional ou com coco.</p>
+                    </div>
+                </div>
+                
+                <!-- PANETONE CORRIGIDO (DENTRO DO GRID E COM OPÇÕES) -->
+                <div class="card">
+                    <!-- ID para o JavaScript achar a imagem -->
+                    <img id="img-panetone" src="imagens/panetone_teste.jpg" alt="Panetone">
+                    <div class="card-info">
+                        <h3>Panetone</h3>
+                        <p>Massa leve e tradicional. Escolha a sua versão favorita:</p>
+                        
+                        <div style="margin-top: 12px;">
+                            <select onchange="mudarFotoPanetone(this.value)" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #d4a373; color: #4a3320; background-color: #faf6f0; font-size: 0.95rem; cursor: pointer; font-family: inherit;">
+                                <option value="frutas">Frutas Cristalizadas</option>
+                                <option value="chocolate">Gotas de Chocolate</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -71,21 +95,30 @@
         <section id="bolos" class="tab-content">
             <div class="grid">
                 <div class="card">
-                    <img src="imagens/bolo_cenoura.jpg" alt="Bolo de Cenoura">
+                    <img src="imagens/bolo_de_cenoura.jpg" alt="Bolo de Cenoura">
                     <div class="card-info">
                         <h3>Bolo de Cenoura</h3>
                         <p>Clássico bolo caseiro de cenoura com cobertura a seu desejo.</p>
                     </div>
                 </div>
+                
+                <!-- BOLO DE CHOCOLATE COM OPÇÕES (Restaurado) -->
                 <div class="card">
-                    <img src="imagens/bolo_chocolate.jpg" alt="Bolo de Chocolate">
+                    <img id="img-bolo-chocolate" src="imagens/bolo_chocolate.jpg" alt="Bolo de Chocolate">
                     <div class="card-info">
                         <h3>Bolo de Chocolate</h3>
-                        <p>Bolo clássico de chocolate com cobertura a seu desejo.</p>
+                        <p>Bolo clássico de chocolate fofinho. Escolha sua cobertura abaixo:</p>
+                        
+                        <div style="margin-top: 12px;">
+                            <select onchange="mudarFotoChocolate(this.value)" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #d4a373; color: #4a3320; background-color: #faf6f0; font-size: 0.95rem; cursor: pointer; font-family: inherit;">
+                                <option value="sem">Sem Cobertura</option>
+                                <option value="ninho">Cobertura de Leite Ninho</option>
+                                <option value="chocolate">Cobertura de chocolate</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Novos Bolos Adicionados -->
                 <div class="card">
                     <img src="imagens/bolo_fuba.jpg" alt="Bolo de Fubá">
                     <div class="card-info">
@@ -117,6 +150,20 @@
             </div>
         </section>
     </main>
+
+    <!-- RODAPÉ COM REDES SOCIAIS -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://instagram.com/SEU_USUARIO_AQUI" target="_blank" class="icon insta" title="Nosso Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+            <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" class="icon whats" title="Faça seu pedido">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>Nos siga nas redes sociais e faça seu pedido!</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
